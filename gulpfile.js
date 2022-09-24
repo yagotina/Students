@@ -11,7 +11,7 @@ const transferFiles = cb => {
     src(['src/css/style.css'])
       .pipe(dest('dist/css/'));
   
-    src(['src/js/index.js'])
+    src(['src/js/*'])
       .pipe(dest('dist/js/'));
   
     cb();
